@@ -76,7 +76,16 @@
   from {opacity: 0; transform: translateY(-20px);}
   to {opacity: 1; transform: translateY(0);}
 }
+.mon-lien {
+        margin-left: 50px; /* Valeur par défaut (desktop) */
+    }
 
+    @media (max-width: 768px) { /* Mobile/tablette */
+        .mon-lien {
+            margin-left: 10px; /* Réduire la marge */
+            float: none; /* Désactiver le float si utilisé */
+        }
+    }
   </style>
 </head>
 <body>
@@ -129,7 +138,7 @@
   <div class="contact">
     <h2>📞 Me Contacter</h2>
     <p><strong>Téléphone :</strong> (+223) 74 00 50 70</p>
-    <a href="CV_Mamadou.pdf" download style="padding:10px 20px;position: absolute; right: 450px; background:#004080;color:white;border-radius:30px;text-decoration:none;">Télécharger mon CV</a>
+    <a href="CV_Mamadou.pdf" class="mon-lien" download style="padding:10px 20px;position: absolute; right: 450px; background:#004080;color:white;border-radius:30px;text-decoration:none;">Télécharger mon CV</a>
     <p><strong>Email :</strong> <a href="mailto:mamadoundne@gmail.com">mamadoundne@gmail.com</a></p>
     <p><strong>Localisation :</strong> Bamako, Mali</p>
     </div>
